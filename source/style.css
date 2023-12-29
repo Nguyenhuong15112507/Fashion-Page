@@ -1,0 +1,486 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* Set up basic styles for the page */
+body {
+    line-height: 1.6;
+    background-color: #fbe5df;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the header */
+.page-header {
+    background-color: #d65d35;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.page-title h2 {
+    margin: 0;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-item a:hover {
+    color: rgb(206, 207, 196);
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Style the page intro section */
+.page-body {
+    margin: 20px;
+    position: relative;
+}
+.page-intro {
+    
+    background-image: url("./img/fundo-abstrato-papel-de-parede-colorido_665280-518.avif");
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    margin: auto;
+    border: 2px solid #d65d35;
+    border-radius: 10px;
+    width: 95%;
+    color: rgb(8, 7, 7);
+}
+.intro-header h1 {
+    color: rgb(12 12 12);
+}
+
+
+.page-info {
+    margin-bottom: 0px;
+}  
+.contact-mes {
+    margin: 5px 0;
+}
+.contact-icon a {
+    margin-right: 10px;
+}
+.newproduct-btn, .subs-btn {
+    color: #fff;
+    background-color: #d65d35;
+    border: 1px solid #d65d35;
+    border-radius: 2px;
+    height: 20px
+}
+.subs-btn {
+    color: #fff;
+    background-color: #be2424;
+    border: 1px solid #be2424;
+    border-radius: 2px;
+    height: 20px
+}
+.newproduct-btn:hover, .subs-btn:hover {
+    opacity: 0.6;
+}
+/* style the filter */
+.product-filter {
+    margin: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+.search {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+}
+.search-textbox {
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#category-select {
+    height: 20px;
+}
+#item-name-filter {
+    margin-right: 10px;
+    height: 20px;
+}
+/* Cart item */
+.cart {
+    margin-left: 10px;
+    position: relative;
+}
+.cart:hover {
+    cursor: pointer; 
+}
+
+.item-num {
+    font-size: 10px;
+    text-align: center;
+    width: 10px;
+    padding: 0 5px 0;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: -0.2875rem;
+    left: 1rem; 
+}
+.bought-item-list {
+    display: none;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 2;
+    right: -29px;
+    top: 41px;
+    font-size: 15px;
+    
+    
+}
+.cart:hover .bought-item-list, .cart:hover .arrow-up {
+    display: block;
+}
+.product-detail {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
+}
+.product-detail:hover {
+    background-color: rgb(230, 227, 227);
+}
+.item-name, .item-price {
+    margin: 20px;
+}
+.item-price {
+    margin: 20px 0 20px 50px ;
+    color: rgb(235, 63, 63);
+}
+.product-detail .pro-pic {
+    width: 22%;
+    height: auto;
+    margin-top: 10px;
+
+}
+.arrow-up {
+   
+    width: 0; 
+    height: 0; 
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 18px solid #fff;
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+    top: -17px;
+
+  }
+  .buy-now-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+/* Style the product list section */
+.product-list {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: calc(30% - 20px); /* Adjusted width with margin */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    text-align: center; /* Center text in product-item */
+    border-radius: 5px 
+}
+.pro-color-item a {
+    color: #333;
+}
+.pro-color-item a:hover {
+    opacity: 0.7;
+}
+.pro-pic {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Add some space between image and text */
+}
+
+.pro-name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.pro-quantity,
+.pro-price {
+    margin-bottom: 10px;
+}
+
+.pro-color {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.pro-color-item {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.buy-btn {
+background-color: #d65d35;
+border: #d65d35;
+color: #fff;
+border-radius: 3px;
+padding: 5px 20px;
+}
+
+.buy-btn:hover {
+    opacity: 0.6;
+}
+/* ADD ITEM TO CARD */ 
+.product-add-to-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+}
+.buy-product-item {
+    position: absolute;
+    width: 40%;
+    text-align: left; 
+    top:10%;
+    margin: auto;
+}
+.pro-pic-added-to-card {
+    width: 24%;
+}
+.product-add-to-properties {
+    padding-left: 10px;
+}
+.product-add-to-property {
+    padding: 5px;
+    border-radius: 2px;
+}
+.product-add-to-property:hover {
+    border:1px solid #d65d35;
+   
+}
+.product-add-to-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.pro-pic-added-to-card:hover {
+    border: 1px solid #d65d35;
+}
+.cancel {
+    border: rgb(106, 104, 104);
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 20px;
+    margin-left: 10px;
+    background-color: rgb(106, 104, 104);
+}
+.cancel:hover {
+    opacity: 0.5;
+}
+.decrease {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 2px;
+}
+.increase {
+    color: #d65d35;
+    background-color: #fff;
+    border: 1px solid #d65d35;
+    border-radius: 2px;
+}
+.hasbackground {
+    background-color: #d19c8a;
+}
+/* Style the customer feedback section */
+.cus-feedback-list {
+    display: flex;
+    flex-wrap: wrap;
+   
+} 
+.form-header {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 10px; */
+    margin-bottom: 10px;
+    
+} 
+.closeIcon {
+    background-color: #fff;
+    border: none;
+    padding: 5px;
+    font-weight: 600;
+}
+.give-star {
+    margin-bottom: 20px;
+}
+.add-fb {
+margin-left: 10px;
+background-color: #d65d35;
+border: #d65d35;
+color: #fff;
+border-radius: 3px;
+}
+.add-fb:hover {
+    opacity: 0.6;
+}
+.cus-feedback {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 10px 10px;
+    padding: 10px 10px 10px 0;
+    width: 46.5%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.cus-name {
+    margin: 5px;
+}
+.cus-feedback-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+.cus-feedback-form {
+    width: 470px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 auto 10px;
+    padding: 20px;
+    padding-bottom: 50px;
+    display: none;
+    position: relative;
+}
+.isVisible {
+    display: inline-block;
+    
+}
+.isDisplayed {
+   visibility: visible;
+    
+}
+.fb-input {
+    width: 34em;
+    right: 0;
+    resize: vertical;
+    line-height: 1.6;
+    font-family: system-ui;
+}
+.add-fb-input {
+    padding: 5px;
+    background-color: #d65d35;
+    border: #d65d35;
+    color: #fff;
+    border-radius: 3px;
+    right: 40%;
+    bottom: 20px;
+    position: absolute;
+    }
+.cus-fb-list-header .pro-header {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin: 20px;
+}
+.cus-fb-list-header {
+    display: flex;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.cus-feedback .cus-pic {
+    max-width: 45%;
+    width: 70%;
+    height: 80%;
+    border-radius: 50%;
+    margin: auto;
+}
+.far .fa-star{
+    background-color: rgb(205, 178, 26);
+}
+.avatar-cus {
+    text-align: center;
+    width: 20%;
+}
+.star {
+    display: inline-block;
+    
+}
+/* Style the shop contact section */
+.shop-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.getintouch,
+.openhour,
+.contact-info {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+}
+.subs-btn {
+    margin: 10px 5px 10px 0;
+    height: 20px;
+    
+}
+/* Style the footer */
+.page-footer {
+    background-color: #d65d35;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.class-num span, .info-input input  {
+    margin-left: 10px;
+}

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kaori Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    
+</head>
+<body>
+    <header class="page-header">
+      <div class="page-title">
+        <h2>Kaori Fashion</h2>
+      </div>  
+      <div class="page-nav">
+        <ul class="navbar">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">Gallery</a></li>
+            <li class="nav-item"><a href="#">New Arrivals</a></li>
+            <li class="nav-item"><a href="#">Testimony</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="page-body">
+        <div class="page-intro">
+            <div class="intro-header">
+                <h1>Kaori Fashion</h1>
+            </div>
+            <div class="intro-container">
+                <div class="intro-mes">
+                    "Fashion is part of the daily air and it changes all the time, with all the events. <br/>You can even see the approaching of a revolution in clothes. You can see and feel everything in clothes." —Diana Vreeland
+                </div>
+                <br/>
+                <div class="page-info">
+                    <h4 class="contact-mes">Follow us on Social media</h4>
+                    <span class="contact-icon">
+                        <a href="#"><i class="fab fa-facebook-square" style="color:blue"></i></a> 
+                        <a href="#"><i class="fab fa-instagram-square" style="color:rgb(130, 34, 128)"></i></a> 
+                        <a href="#"><i class="fab fa-snapchat-square" style="color:rgb(241, 208, 63)"></i></a>  
+                        <a href="#"><i class="fab fa-pinterest-square" style="color:rgb(216, 26, 61)"></i></i></a>  
+                        <a href="#"><i class="fab fa-twitter-square" style="color:rgb(55, 143, 225)"></i></i></a>  
+                        <a href="#"><i class="fab fa-linkedin" style="color:blue"></i></i></a>
+                    </span>
+                    <br/>
+                    <button class="newproduct-btn">New product</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="product-filter">
+            <div class="checkbox-list">
+                <span class="filter-checkbox">
+                    <input type="checkbox" name="all" id="all" value="all">
+                    <label for="">All</label>
+                </span>
+                <span class="filter-checkbox">
+                    <input type="checkbox" name="sales-item" id="sales-item" value="sales-item">
+                    <label for="">Sales Item</label>
+                </span>
+                <span class="filter-checkbox">
+                    <input type="checkbox" name="new-item" id="new-item" value="new-item">
+                    <label for="">New Item</label>
+            </span>
+            </div>
+            <div class="search">
+                <div class="selection-filter">
+                    <label for="category-select">Categories</label>
+
+                    <select name="categories" id="category-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="dress">Dress</option>
+                    <option value="t-shirt">T-shirt</option>
+                    <option value="shirt">Shirt</option>
+                    <option value="jeans">Jeans</option>
+                    <option value="hats">Hats</option>
+                    <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="search-textbox">
+                    <input type="text" placeholder="Item's name" name="item-name-filter" id="item-name-filter">
+                    <i class="fas fa-search" style="color: rgb(12, 12, 37);"></i>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart" style="color: rgb(60, 60, 239);"></i>
+                    <span class="item-num">2</span>
+                    <!-- bought item list -->
+                    <div class="bought-item-list">
+                        <div class="arrow-up"></div>
+                        <h3 class="popup-item-header">Your Products</h3>
+                        <div class="product-detail">
+                            <img src="./img/SHOT23_Taryn_Camille_0855-Karen-Willis-Holmes-BESPOKE-Design-Your-Gown-800x1000.jpg.webp" alt="" class="pro-pic">
+                            <span class="item-name">White Dress 
+                                <!-- <span class="item-num">2</span><span class="item-num-back">item</span> -->
+                            </span>
+                            <span class="item-price">12.00$</span>
+                        </div>
+                        <div class="product-detail">
+                            <img src="./img/SHOT23_Taryn_Camille_0855-Karen-Willis-Holmes-BESPOKE-Design-Your-Gown-800x1000.jpg.webp" alt="" class="pro-pic">
+                            <span class="item-name">White Dress</span>
+                            <span class="item-price">12.00$</span>
+                        </div>
+                        <div class="buy-now-btn">
+                            <button class="buy newproduct-btn">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <!-- <div class="bought-item-list">
+            <div class="arrow-up"></div>
+            <h3 class="popup-item-header">Your Products</h3>
+            <div class="product-detail">
+                <img src="./img/SHOT23_Taryn_Camille_0855-Karen-Willis-Holmes-BESPOKE-Design-Your-Gown-800x1000.jpg.webp" alt="" class="pro-pic">
+                <span class="item-name">White Dress</span>
+                <span class="item-price">12$</span>
+            </div>
+            <div class="product-detail">
+                <img src="./img/SHOT23_Taryn_Camille_0855-Karen-Willis-Holmes-BESPOKE-Design-Your-Gown-800x1000.jpg.webp" alt="" class="pro-pic">
+                <span class="item-name">White Dress</span>
+                <span class="item-price">12$</span>
+            </div>
+            <div class="buy-now-btn">
+                <button class="buy newproduct-btn">Buy now</button>
+            </div>
+        </div> -->
+        <div class="pro-header">
+            <h3 class="feedback">GALLERY</h3>
+        </div>
+        <div class="product-add-to-card">
+            <div class="product-item buy-product-item">
+                <img src="./img/SHOT23_Taryn_Camille_0855-Karen-Willis-Holmes-BESPOKE-Design-Your-Gown-800x1000.jpg.webp" alt="" class="pro-pic pro-pic-added-to-card">
+                <img src="./img/SHOT23_Taryn_Camille_0855-Karen-Willis-Holmes-BESPOKE-Design-Your-Gown-800x1000.jpg.webp" alt="" class="pro-pic pro-pic-added-to-card">
+                <img src="./img/SHOT23_Taryn_Camille_0855-Karen-Willis-Holmes-BESPOKE-Design-Your-Gown-800x1000.jpg.webp" alt="" class="pro-pic pro-pic-added-to-card">
+                <img src="./img/SHOT23_Taryn_Camille_0855-Karen-Willis-Holmes-BESPOKE-Design-Your-Gown-800x1000.jpg.webp" alt="" class="pro-pic pro-pic-added-to-card">
+                <h3 class="pro-name">Kiya Fashion</h3>
+                <div class="pro-color product-add-to-properties">
+                    <span class="pro-color-item " style="font-weight: 600;">Price</span>
+                    <span class="pro-color-item ">$12.00</span>
+                </div>
+                <div class="pro-color product-add-to-properties">
+                    <span class="pro-color-item " style="font-weight: 600;">Amount</span>
+                    <span class="pro-color-item amount">
+                        <button class="decrease" onclick="decrease()">-</button>
+                        <span class="amount-num">1</span>
+                        <button class="increase" onclick="increase()">+</button>
+                    </span>
+                </div>
+                <div class="pro-color product-add-to-properties">
+                    <span class="pro-color-item" style="font-weight: 600;">Color:</span>
+                    <span class="pro-color-item product-add-to-property">Black</span>
+                    <span class="pro-color-item product-add-to-property">White</span>
+                    <span class="pro-color-item product-add-to-property">Grey</span>
+                </div>
+                <div class="pro-color product-add-to-properties">
+                    <span class="pro-color-item" style="font-weight: 600;">Size:</span>
+                    <span class="pro-color-item product-add-to-property">XS</span>
+                    <span class="pro-color-item product-add-to-property"><S></span>
+                    <span class="pro-color-item product-add-to-property">M</span>
+                    <span class="pro-color-item product-add-to-property">L</span>
+                    <span class="pro-color-item product-add-to-property">XL</span>
+                </div>
+                <div class="product-add-to-btn">
+                    <button class="buy-btn">Add to card</button>
+                    <button class="cancel" onclick="closePopup2()">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-list">  
+            <div class="product-item">
+                <img src="./img/SHOT23_Taryn_Camille_0855-Karen-Willis-Holmes-BESPOKE-Design-Your-Gown-800x1000.jpg.webp" alt="" class="pro-pic">
+                <h3 class="pro-name">kiya Fashion</h3>
+                <p class="pro-quantity">8 items in store</p>
+                <ul class="pro-color">
+                    <li class="pro-color-item"><a href="#">Black</a></li>
+                    <li class="pro-color-item"><a href="#">White</a></li>
+                    <li class="pro-color-item"><a href="#">Grey</a></li>
+                </ul>
+                <p class="pro-price">$12.00</p>
+                <button class="buy-btn" onclick="isDisplayed()">Add to card</button>
+            </div>
+            <div class="product-item">
+                <img src="./img/SHOT23_Taryn_Camille_0855-Karen-Willis-Holmes-BESPOKE-Design-Your-Gown-800x1000.jpg.webp" alt="" class="pro-pic">
+                <h3 class="pro-name">kiya Fashion</h3>
+                <p class="pro-quantity">8 items in store</p>
+                <ul class="pro-color">
+                    <li class="pro-color-item"><a href="#">Black</a></li>
+                    <li class="pro-color-item"><a href="#">White</a></li>
+                    <li class="pro-color-item"><a href="#">Grey</a></li>
+                </ul>
+                <p class="pro-price">$12.00</p>
+                <button class="buy-btn" onclick="isDisplayed()">Add to card</button>
+
+            </div>
+            <div class="product-item">
+                <img src="./img/SHOT23_Taryn_Camille_0855-Karen-Willis-Holmes-BESPOKE-Design-Your-Gown-800x1000.jpg.webp" alt="" class="pro-pic">
+                <h3 class="pro-name">kiya Fashion</h3>
+                <p class="pro-quantity">8 items in store</p>
+                <ul class="pro-color">
+                    <li class="pro-color-item"><a href="#">Black</a></li>
+                    <li class="pro-color-item"><a href="#">White</a></li>
+                    <li class="pro-color-item"><a href="#">Grey</a></li>
+                </ul>
+                <p class="pro-price">$12.00</p>
+                <button class="buy-btn" onclick="isDisplayed()">Add to card</button>
+
+            </div>
+            <div class="product-item">
+                <img src="./img/SHOT23_Taryn_Camille_0855-Karen-Willis-Holmes-BESPOKE-Design-Your-Gown-800x1000.jpg.webp" alt="" class="pro-pic">
+                <h3 class="pro-name">kiya Fashion</h3>
+                <p class="pro-quantity">8 items in store</p>
+                <ul class="pro-color">
+                    <li class="pro-color-item"><a href="#">Black</a></li>
+                    <li class="pro-color-item"><a href="#">White</a></li>
+                    <li class="pro-color-item"><a href="#">Grey</a></li>
+                </ul>
+                <p class="pro-price">$12.00</p>
+                <button class="buy-btn" onclick="isDisplayed()">Add to card</button>
+
+            </div>
+            <div class="product-item">
+                <img src="./img/SHOT23_Taryn_Camille_0855-Karen-Willis-Holmes-BESPOKE-Design-Your-Gown-800x1000.jpg.webp" alt="" class="pro-pic">
+                <h3 class="pro-name">kiya Fashion</h3>
+                <p class="pro-quantity">8 items in store</p>
+                <ul class="pro-color">
+                    <li class="pro-color-item"><a href="#">Black</a></li>
+                    <li class="pro-color-item"><a href="#">White</a></li>
+                    <li class="pro-color-item"><a href="#">Grey</a></li>
+                </ul>
+                <p class="pro-price">$12.00</p>
+                <button class="buy-btn" onclick="isDisplayed()">Add to card</button>
+
+            </div>
+            <div class="product-item">
+                <img src="./img/SHOT23_Taryn_Camille_0855-Karen-Willis-Holmes-BESPOKE-Design-Your-Gown-800x1000.jpg.webp" alt="" class="pro-pic">
+                <h3 class="pro-name">kiya Fashion</h3>
+                <p class="pro-quantity">8 items in store</p>
+                <ul class="pro-color">
+                    <li class="pro-color-item"><a href="#">Black</a></li>
+                    <li class="pro-color-item"><a href="#">White</a></li>
+                    <li class="pro-color-item"><a href="#">Grey</a></li>
+                </ul>
+                <p class="pro-price">$12.00</p>
+                <button class="buy-btn" onclick="isDisplayed()">Add to card</button>
+
+            </div>
+        </div>
+        <div class="cus-feedback-list">
+            <div class="cus-fb-list-header">
+                <h3 class="feedback">CUSTOMER FEEDBACK</h3>
+                <button class="add-fb"  onclick="visable()">Add Feedback</button>
+            </div>
+            
+            <div class="cus-feedback-form">
+                <div class="form-header">
+                    <h3 class="form-header">Give your feedback</h3>
+                    <button class="closeIcon" onclick="closePopup()">X</button>
+                </div>
+                
+                <label for="">Your Name</label>
+                <br/>
+                <input class="fb-input" type="text" id="name" name="name" required>
+                <br/>
+                <label for="">Commnet</label>
+                <br/>
+                <textarea class="fb-input" type="text" id="comment" name="comment"></textarea>
+                <br/>
+                <div class="give-star">
+                    <i id="star-color" class="far fa-star" style="color: rgb(205, 178, 26);" onclick="paintColor(0)"></i>
+                    <i id="star-color1" class=" far fa-star" style="color: rgb(205, 178, 26);" onclick="paintColor(1)"></i>
+                    <i id="star-color2" class=" far fa-star" style="color: rgb(205, 178, 26);" onclick="paintColor(2)"></i>
+                    <i id="star-color3" class=" far fa-star" style="color: rgb(205, 178, 26);" onclick="paintColor(3)"></i>
+                    <i id="star-color4" class=" far fa-star" style="color: rgb(205, 178, 26);" onclick="paintColor(4)"></i>
+                </div>
+                <button class="add-fb-input" onclick="appendContent()">Add Feedback</button>
+            </div>
+            <div class="cus-feedback-content">
+                <div class="cus-feedback">
+                    <div class="avatar-cus">
+                    <img src="img/cdr1820775_638171521494543071.jpg" alt="" class="cus-pic">
+                    <h4 class="cus-name">Sara Mak</h4>
+                    </div>
+                    <div class="cus-content">
+                        <div class="cus-mes">"Your items were a huge success!"</div>
+                        <div class="star">
+                            <i class="fas fa-star" style="color: rgb(205, 178, 26);"></i>
+                            <i class="fas fa-star" style="color: rgb(205, 178, 26);"></i>
+                            <i class="fas fa-star" style="color: rgb(205, 178, 26);"></i>
+                            <i class="fas fa-star" style="color: rgb(205, 178, 26);"></i>
+                            <i class="fas fa-star" style="color: rgb(205, 178, 26);"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cus-feedback">
+                    <div class="avatar-cus">
+                    <img src="img/cdr1820775_638171521494543071.jpg" alt="" class="cus-pic">
+                    <h4 class="cus-name">Sara Mak</h4>
+                    </div>
+                    <div class="cus-content">
+                        <div class="cus-mes">"Your items were a huge success!"</div>
+                        <div class="star">
+                            <i class="fas fa-star" style="color: rgb(205, 178, 26);"></i>
+                            <i class="fas fa-star" style="color: rgb(205, 178, 26);"></i>
+                            <i class="fas fa-star" style="color: rgb(205, 178, 26);"></i>
+                            <i class="fas fa-star" style="color: rgb(205, 178, 26);"></i>
+                            <i class="fas fa-star" style="color: rgb(205, 178, 26);"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="shop-contact">
+            <div class="getintouch">
+                <h3 class="contact-mes">Your styles at low cost</h3>
+                <p>We care about our customers.
+                    <br/>
+                    You can contact us for any feedback</p>
+                <h3 class="contact-mes">Follow Us</h3>
+                <span class="contact-icon">
+                    <a href="#"><i class="fab fa-facebook-square" style="color:blue"></i></a> 
+                    <a href="#"><i class="fab fa-instagram-square" style="color:rgb(130, 34, 128)"></i></a> 
+                    <a href="#"><i class="fab fa-snapchat-square" style="color:rgb(241, 208, 63)"></i></a>  
+                    <a href="#"><i class="fab fa-pinterest-square" style="color:rgb(216, 26, 61)"></i></i></a>  
+                    <a href="#"><i class="fab fa-twitter-square" style="color:rgb(55, 143, 225)"></i></i></a>  
+                    <a href="#"><i class="fab fa-linkedin" style="color:blue"></i></i></a>
+                </span>
+            </div>
+            <div class="openhour">
+                <h3 class="contact-mes">Opening hour</h3>
+                <p>Mon - Sat 7am - 9pm:
+                    <br/>
+                    Opening on Morning | Off at afternoon
+                    <br/>
+                    Delivery only on opening hours
+                    
+                    </p>
+            </div>
+            <div class="contact-info">
+                <h3>Contact information</h3>
+                <span class="class-num">
+                    <i class="fas fa-phone-square-alt" style="color: rgb(67, 67, 240);"></i>
+                    <span> 763-957-6781</span>
+                    <br>
+                </span>
+                <span class="class-num">
+                    <i class="fas fa-phone-square-alt" style="color: rgb(67, 67, 240);"></i>
+                    <span> 763-957-6781</span>
+                    <br>
+                </span>
+                <div class="info-input">
+                    <i class="fas fa-envelope" style="color: rgb(240, 47, 47)"></i>
+                    <input placeholder="Email" name="email" type="email"/>
+                    <br>
+                    <button class="subs-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <p class="footer-content">Powered by W3.css</p>
+    </footer>
+    
+
+ <script src="./main.js"></script>   
+</body>
+</html>
